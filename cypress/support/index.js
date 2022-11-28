@@ -49,4 +49,3 @@ module.exports = (on, config) => {
       'readXlsx': readXlsx.read
     })
   }
-  
