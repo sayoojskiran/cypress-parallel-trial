@@ -1,0 +1,23 @@
+{
+  "name": "demo-of-ddt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d 'cypress/Integration/Example/*.js' -a '\"--headed\"'",
+    "test-one":"cypress run '--parallel' '--group' '2x-chrome' --spec 'cypress/Integration/Example/*.js'"
+  },
+  "author": "Akshay",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "convert-csv-to-json": "^1.3.3",
+    "cypress-parallel": "^0.9.1",
+    "xlsx": "^0.18.5"
+  }
+}
